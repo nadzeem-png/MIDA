@@ -1,4 +1,4 @@
-/* ---- reset the Vite demo styles that clamp width ---- */
+/* Full-viewport foundation */
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -6,17 +6,16 @@ html, body, #root {
   padding: 0;
 }
 
+/* Remove any Vite demo clamp (if present in your old css) */
+/* e.g., delete rules like: #root { max-width: 1280px; margin: 0 auto; padding: 2rem; } */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* optional: smoother fonts */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
 }
-
-/* delete any old rules like:
-#root { max-width: 1280px; margin: 0 auto; padding: 2rem; }
-*/
